@@ -82,10 +82,10 @@ class CoinDetailViewController: UIViewController {
     func updateBookmark() {
         if let data = self.coinData {
             if BookmarkUserDefaultManager.shared.isExistCurrency(currency: data.currency) {
-                self.bookmarkImageView.image = UIImage.init(systemName: "star.fill")
+                self.bookmarkImageView.image = UIImage.init(named: "starFill")
             }
             else {
-                self.bookmarkImageView.image = UIImage.init(systemName: "star")
+                self.bookmarkImageView.image = UIImage.init(named: "starEmpty")
             }
         }
     }
