@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BF60795525ECEA37001438C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60795425ECEA37001438C9 /* AppDelegate.swift */; };
+		BF60795725ECEA37001438C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60795625ECEA37001438C9 /* SceneDelegate.swift */; };
+		BF60795C25ECEA37001438C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF60795A25ECEA37001438C9 /* Main.storyboard */; };
+		BF60795E25ECEA39001438C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF60795D25ECEA39001438C9 /* Assets.xcassets */; };
+		BF60796125ECEA39001438C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF60795F25ECEA39001438C9 /* LaunchScreen.storyboard */; };
+		BF60796E25ECEACE001438C9 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF60796D25ECEACE001438C9 /* ApiManager.swift */; };
+		BFC0795425ED53E000C70EFB /* CoinListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC0794E25ED53E000C70EFB /* CoinListInteractor.swift */; };
+		BFC0795525ED53E000C70EFB /* CoinListWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC0794F25ED53E000C70EFB /* CoinListWorker.swift */; };
+		BFC0795625ED53E000C70EFB /* CoinListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC0795025ED53E000C70EFB /* CoinListRouter.swift */; };
+		BFC0795725ED53E000C70EFB /* CoinListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC0795125ED53E000C70EFB /* CoinListViewController.swift */; };
+		BFC0795825ED53E000C70EFB /* CoinListModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC0795225ED53E000C70EFB /* CoinListModels.swift */; };
+		BFC0795925ED53E000C70EFB /* CoinListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC0795325ED53E000C70EFB /* CoinListPresenter.swift */; };
+		BFC0796625ED59E600C70EFB /* CoinData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC0796525ED59E600C70EFB /* CoinData.swift */; };
+		BFC0796B25ED718F00C70EFB /* CoinListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC0796925ED718F00C70EFB /* CoinListCell.swift */; };
+		BFC0796C25ED718F00C70EFB /* CoinListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFC0796A25ED718F00C70EFB /* CoinListCell.xib */; };
+		BFC0797125EDE59400C70EFB /* Double+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC0797025EDE59400C70EFB /* Double+Extensions.swift */; };
+		BFC0797925EE731000C70EFB /* BookmarkUserDefaultManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC0797825EE731000C70EFB /* BookmarkUserDefaultManager.swift */; };
+		BFC0797C25EEB36F00C70EFB /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC0797B25EEB36F00C70EFB /* DataManager.swift */; };
+		BFC0798025EEBD5F00C70EFB /* CoinDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC0797E25EEBD5F00C70EFB /* CoinDetailViewController.swift */; };
+		BFC0798125EEBD5F00C70EFB /* CoinDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFC0797F25EEBD5F00C70EFB /* CoinDetailViewController.xib */; };
+		F4BEACAB68B60E1AB72D5084 /* Pods_BithumbHomeworkJskang.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61BA0096507E3671D5060B79 /* Pods_BithumbHomeworkJskang.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E6E5C75BB6E29D75DEA2AD8 /* Pods-BithumbHomeworkJskang.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BithumbHomeworkJskang.release.xcconfig"; path = "Target Support Files/Pods-BithumbHomeworkJskang/Pods-BithumbHomeworkJskang.release.xcconfig"; sourceTree = "<group>"; };
+		1E71EA245BA68DC454957B19 /* Pods-BithumbHomeworkJskang.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BithumbHomeworkJskang.debug.xcconfig"; path = "Target Support Files/Pods-BithumbHomeworkJskang/Pods-BithumbHomeworkJskang.debug.xcconfig"; sourceTree = "<group>"; };
+		61BA0096507E3671D5060B79 /* Pods_BithumbHomeworkJskang.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BithumbHomeworkJskang.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF60795125ECEA37001438C9 /* BithumbHomeworkJskang.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BithumbHomeworkJskang.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF60795425ECEA37001438C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF60795625ECEA37001438C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BF60795B25ECEA37001438C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF60795D25ECEA39001438C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF60796025ECEA39001438C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF60796225ECEA39001438C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF60796D25ECEACE001438C9 /* ApiManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		BFC0794E25ED53E000C70EFB /* CoinListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinListInteractor.swift; sourceTree = "<group>"; };
+		BFC0794F25ED53E000C70EFB /* CoinListWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinListWorker.swift; sourceTree = "<group>"; };
+		BFC0795025ED53E000C70EFB /* CoinListRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinListRouter.swift; sourceTree = "<group>"; };
+		BFC0795125ED53E000C70EFB /* CoinListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinListViewController.swift; sourceTree = "<group>"; };
+		BFC0795225ED53E000C70EFB /* CoinListModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinListModels.swift; sourceTree = "<group>"; };
+		BFC0795325ED53E000C70EFB /* CoinListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinListPresenter.swift; sourceTree = "<group>"; };
+		BFC0796525ED59E600C70EFB /* CoinData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinData.swift; sourceTree = "<group>"; };
+		BFC0796925ED718F00C70EFB /* CoinListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinListCell.swift; sourceTree = "<group>"; };
+		BFC0796A25ED718F00C70EFB /* CoinListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinListCell.xib; sourceTree = "<group>"; };
+		BFC0797025EDE59400C70EFB /* Double+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extensions.swift"; sourceTree = "<group>"; };
+		BFC0797825EE731000C70EFB /* BookmarkUserDefaultManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkUserDefaultManager.swift; sourceTree = "<group>"; };
+		BFC0797B25EEB36F00C70EFB /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		BFC0797E25EEBD5F00C70EFB /* CoinDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailViewController.swift; sourceTree = "<group>"; };
+		BFC0797F25EEBD5F00C70EFB /* CoinDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoinDetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF60794E25ECEA37001438C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4BEACAB68B60E1AB72D5084 /* Pods_BithumbHomeworkJskang.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		57715853C3109504D4AC5CE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61BA0096507E3671D5060B79 /* Pods_BithumbHomeworkJskang.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF60794825ECEA37001438C9 = {
+			isa = PBXGroup;
+			children = (
+				BF60795325ECEA37001438C9 /* BithumbHomeworkJskang */,
+				BF60795225ECEA37001438C9 /* Products */,
+				EB92040FEA459253243DDED5 /* Pods */,
+				57715853C3109504D4AC5CE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF60795225ECEA37001438C9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF60795125ECEA37001438C9 /* BithumbHomeworkJskang.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF60795325ECEA37001438C9 /* BithumbHomeworkJskang */ = {
+			isa = PBXGroup;
+			children = (
+				BF60795425ECEA37001438C9 /* AppDelegate.swift */,
+				BF60795625ECEA37001438C9 /* SceneDelegate.swift */,
+				BF60795D25ECEA39001438C9 /* Assets.xcassets */,
+				BF60795F25ECEA39001438C9 /* LaunchScreen.storyboard */,
+				BF60796225ECEA39001438C9 /* Info.plist */,
+				BF60795A25ECEA37001438C9 /* Main.storyboard */,
+				BFC0796F25EDE57700C70EFB /* Utils */,
+				BFC0795B25ED53ED00C70EFB /* Models */,
+				BF60796C25ECEACE001438C9 /* Managers */,
+				BFC0793D25ED50E300C70EFB /* ViewControllers */,
+			);
+			path = BithumbHomeworkJskang;
+			sourceTree = "<group>";
+		};
+		BF60796C25ECEACE001438C9 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BF60796D25ECEACE001438C9 /* ApiManager.swift */,
+				BFC0797825EE731000C70EFB /* BookmarkUserDefaultManager.swift */,
+				BFC0797B25EEB36F00C70EFB /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		BFC0793D25ED50E300C70EFB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFC0794D25ED53E000C70EFB /* CoinListViewController */,
+				BFC0794C25ED53E000C70EFB /* CoinDetailViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BFC0794C25ED53E000C70EFB /* CoinDetailViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFC0797E25EEBD5F00C70EFB /* CoinDetailViewController.swift */,
+				BFC0797F25EEBD5F00C70EFB /* CoinDetailViewController.xib */,
+			);
+			path = CoinDetailViewController;
+			sourceTree = "<group>";
+		};
+		BFC0794D25ED53E000C70EFB /* CoinListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BFC0795125ED53E000C70EFB /* CoinListViewController.swift */,
+				BFC0794E25ED53E000C70EFB /* CoinListInteractor.swift */,
+				BFC0794F25ED53E000C70EFB /* CoinListWorker.swift */,
+				BFC0795025ED53E000C70EFB /* CoinListRouter.swift */,
+				BFC0795225ED53E000C70EFB /* CoinListModels.swift */,
+				BFC0795325ED53E000C70EFB /* CoinListPresenter.swift */,
+				BFC0796825ED715600C70EFB /* Cell */,
+			);
+			path = CoinListViewController;
+			sourceTree = "<group>";
+		};
+		BFC0795B25ED53ED00C70EFB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFC0796525ED59E600C70EFB /* CoinData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BFC0796825ED715600C70EFB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BFC0796925ED718F00C70EFB /* CoinListCell.swift */,
+				BFC0796A25ED718F00C70EFB /* CoinListCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		BFC0796F25EDE57700C70EFB /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BFC0797025EDE59400C70EFB /* Double+Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EB92040FEA459253243DDED5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1E71EA245BA68DC454957B19 /* Pods-BithumbHomeworkJskang.debug.xcconfig */,
+				1E6E5C75BB6E29D75DEA2AD8 /* Pods-BithumbHomeworkJskang.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF60795025ECEA37001438C9 /* BithumbHomeworkJskang */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF60796525ECEA39001438C9 /* Build configuration list for PBXNativeTarget "BithumbHomeworkJskang" */;
+			buildPhases = (
+				EE3147CE6A3D1A0AA7FC3BE8 /* [CP] Check Pods Manifest.lock */,
+				BF60794D25ECEA37001438C9 /* Sources */,
+				BF60794E25ECEA37001438C9 /* Frameworks */,
+				BF60794F25ECEA37001438C9 /* Resources */,
+				70EA22F89ACE718920F18B0D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BithumbHomeworkJskang;
+			productName = BithumbHomeworkJskang;
+			productReference = BF60795125ECEA37001438C9 /* BithumbHomeworkJskang.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF60794925ECEA37001438C9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					BF60795025ECEA37001438C9 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = BF60794C25ECEA37001438C9 /* Build configuration list for PBXProject "BithumbHomeworkJskang" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF60794825ECEA37001438C9;
+			productRefGroup = BF60795225ECEA37001438C9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF60795025ECEA37001438C9 /* BithumbHomeworkJskang */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF60794F25ECEA37001438C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF60796125ECEA39001438C9 /* LaunchScreen.storyboard in Resources */,
+				BF60795E25ECEA39001438C9 /* Assets.xcassets in Resources */,
+				BFC0796C25ED718F00C70EFB /* CoinListCell.xib in Resources */,
+				BF60795C25ECEA37001438C9 /* Main.storyboard in Resources */,
+				BFC0798125EEBD5F00C70EFB /* CoinDetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70EA22F89ACE718920F18B0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BithumbHomeworkJskang/Pods-BithumbHomeworkJskang-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BithumbHomeworkJskang/Pods-BithumbHomeworkJskang-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BithumbHomeworkJskang/Pods-BithumbHomeworkJskang-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE3147CE6A3D1A0AA7FC3BE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BithumbHomeworkJskang-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF60794D25ECEA37001438C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFC0797125EDE59400C70EFB /* Double+Extensions.swift in Sources */,
+				BFC0795825ED53E000C70EFB /* CoinListModels.swift in Sources */,
+				BF60796E25ECEACE001438C9 /* ApiManager.swift in Sources */,
+				BFC0797C25EEB36F00C70EFB /* DataManager.swift in Sources */,
+				BFC0798025EEBD5F00C70EFB /* CoinDetailViewController.swift in Sources */,
+				BFC0796625ED59E600C70EFB /* CoinData.swift in Sources */,
+				BFC0795525ED53E000C70EFB /* CoinListWorker.swift in Sources */,
+				BF60795525ECEA37001438C9 /* AppDelegate.swift in Sources */,
+				BFC0795725ED53E000C70EFB /* CoinListViewController.swift in Sources */,
+				BFC0796B25ED718F00C70EFB /* CoinListCell.swift in Sources */,
+				BFC0795625ED53E000C70EFB /* CoinListRouter.swift in Sources */,
+				BFC0797925EE731000C70EFB /* BookmarkUserDefaultManager.swift in Sources */,
+				BFC0795925ED53E000C70EFB /* CoinListPresenter.swift in Sources */,
+				BF60795725ECEA37001438C9 /* SceneDelegate.swift in Sources */,
+				BFC0795425ED53E000C70EFB /* CoinListInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BF60795A25ECEA37001438C9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF60795B25ECEA37001438C9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF60795F25ECEA39001438C9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF60796025ECEA39001438C9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF60796325ECEA39001438C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF60796425ECEA39001438C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF60796625ECEA39001438C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E71EA245BA68DC454957B19 /* Pods-BithumbHomeworkJskang.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WZ3YYSRAN;
+				INFOPLIST_FILE = BithumbHomeworkJskang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jskang.BithumbHomeworkJskang;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF60796725ECEA39001438C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E6E5C75BB6E29D75DEA2AD8 /* Pods-BithumbHomeworkJskang.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9WZ3YYSRAN;
+				INFOPLIST_FILE = BithumbHomeworkJskang/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jskang.BithumbHomeworkJskang;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF60794C25ECEA37001438C9 /* Build configuration list for PBXProject "BithumbHomeworkJskang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF60796325ECEA39001438C9 /* Debug */,
+				BF60796425ECEA39001438C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF60796525ECEA39001438C9 /* Build configuration list for PBXNativeTarget "BithumbHomeworkJskang" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF60796625ECEA39001438C9 /* Debug */,
+				BF60796725ECEA39001438C9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF60794925ECEA37001438C9 /* Project object */;
+}
